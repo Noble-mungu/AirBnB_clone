@@ -34,11 +34,11 @@ class TestDBStorage(unittest.TestCase):
             Base.metadata.create_all(cls.storage._DBStorage__engine)
             Session = sessionmaker(bind=cls.storage._DBStorage__engine)
             cls.storage._DBStorage__session = Session()
-            cls.state = State(name="California")
+            cls.state = State(name="Nairobi")
             cls.storage._DBStorage__session.add(cls.state)
             cls.city = City(name="San_Jose", state_id=cls.state.id)
             cls.storage._DBStorage__session.add(cls.city)
-            cls.user = User(email="poppy@holberton.com", password="betty")
+            cls.user = User(email="poppy@ALX.com", password="betty")
             cls.storage._DBStorage__session.add(cls.user)
             cls.place = Place(city_id=cls.city.id, user_id=cls.user.id,
                               name="School")

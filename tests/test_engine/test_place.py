@@ -36,9 +36,9 @@ class TestPlace(unittest.TestCase):
         except IOError:
             pass
         FileStorage._FileStorage__objects = {}
-        cls.state = State(name="California")
-        cls.city = City(name="San Francisco", state_id=cls.state.id)
-        cls.user = User(email="poppy@holberton.com", password="betty98")
+        cls.state = State(name="Nairobi")
+        cls.city = City(name="Mombasa", state_id=cls.state.id)
+        cls.user = User(email="poppy@ALX.com", password="betty98")
         cls.place = Place(city_id=cls.city.id, user_id=cls.user.id,
                           name="Betty")
         cls.review = Review(text="stellar", place_id=cls.place.id,
