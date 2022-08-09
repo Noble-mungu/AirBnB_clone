@@ -33,8 +33,8 @@ class TestCity(unittest.TestCase):
             pass
         FileStorage._FileStorage__objects = {}
         cls.filestorage = FileStorage()
-        cls.state = State(name="California")
-        cls.city = City(name="San Francisco", state_id=cls.state.id)
+        cls.state = State(name="Nairobi")
+        cls.city = City(name="Mombasa", state_id=cls.state.id)
 
         if type(models.storage) == DBStorage:
             cls.dbstorage = DBStorage()

@@ -1,13 +1,13 @@
 
 ## Description 
 
-HolbertonBnB is a complete RESTful web application, integrating file and
+ALXBnB is a complete RESTful web application, integrating file and
 database (MySQL) storage in a back-end API with front-end interfacing in a
 clone of AirBnB. The front-end is designed using HTML5/CSS3 and is served using
 Python Flask. The application is configured on a distributed system - two web
 servers and one load balancer - with Nginx and HAProxy.
 
-HolbertonBnB is still in active development, with complete functionality set to
+ALXBnB is still in active development, with complete functionality set to
 deploy in the coming month:
 
 * Complete integration of a RESTful API
@@ -22,13 +22,13 @@ deploy in the coming month:
 
 ### Static :page_facing_up:
 
-The front-end of HolbertonBnB was designed from scratch using HTML5/CSS3 pages
+The front-end of ALXBnB was designed from scratch using HTML5/CSS3 pages
 integrated using Flask. While the front-end has not yet been officially deployed,
 screenshots are viewable in the README of the [web_flask](./web_flask) directory.
 
 ### Classes :cl:
 
-HolbertonBnB supports the following classes:
+ALXBnB supports the following classes:
 
 * BaseModel
 * USER
@@ -48,7 +48,7 @@ depending on the call - [FileStorage](./models/engine/file_storage.py) or
 
 The default mode.
 
-In `FileStorage` mode, every time the backend is initialized, HolbertonBnB
+In `FileStorage` mode, every time the backend is initialized, ALXBnB
 instantiates an instance of `FileStorage` called `storage`. The `storage`
 object is loaded/re-loaded from any class instances stored in the JSON file
 `file.json`. As class instances are created, updated, or deleted, the
@@ -58,7 +58,7 @@ object is loaded/re-loaded from any class instances stored in the JSON file
 
 Run by setting the environmental variables `USER_TYPE_STORAGE=db`.
 
-In `DBStorage` mode, every time the backend is initialized, HolbertonBnB
+In `DBStorage` mode, every time the backend is initialized, ALXBnB
 instantiates an instance of `DBStorage` called `storage`. The `storage` object
 is loaded/re-loaded from the MySQL database specified in the environmental variable
 `USER_MYSQL_DB`, using the USER `USER_MYSQL_USER`, password `USER_MYSQL_PWD`, and
@@ -75,12 +75,12 @@ respectively.
 ## Console :computer:
 
 The console is a command line interpreter that permits management of the backend
-of HolbertonBnB. It can be used to handle and manipulate all classes utilized by
+of ALXBnB. It can be used to handle and manipulate all classes utilized by
 the application (achieved by calls on the `storage` object defined above).
 
 ### Using the Console
 
-The HolbertonBnB console can be run both interactively and non-interactively.
+The ALXBnB console can be run both interactively and non-interactively.
 To run the console in non-interactive mode, pipe any command(s) into an execution
 of the file `console.py` at the command line.
 
@@ -95,7 +95,7 @@ EOF  all  count  create  destroy  help  quit  show  update
 $
 ```
 
-Alternatively, to use the HolbertonBnB console in interactive mode, run the
+Alternatively, to use the ALXBnB console in interactive mode, run the
 file `console.py` by itself:
 
 ```
@@ -136,7 +136,7 @@ $
 
 ### Console Commands
 
-The HolbertonBnB console supports the following commands:
+The ALXBnB console supports the following commands:
 
 #### create
 * Usage: `create <class> <param 1 name>=<param 1 value> <param 2 name>=<param 2 value> ...`
@@ -285,10 +285,10 @@ $ ./console.py
 (USER) create USER
 6f348019-0499-420f-8eec-ef0fdc863c02
 (USER)
-(USER) update USER 6f348019-0499-420f-8eec-ef0fdc863c02 first_name "Holberton" 
+(USER) update USER 6f348019-0499-420f-8eec-ef0fdc863c02 first_name "ALX" 
 (USER) show USER 6f348019-0499-420f-8eec-ef0fdc863c02
 [USER] (6f348019-0499-420f-8eec-ef0fdc863c02) {'created_at': datetime.datetime(
-2019, 2, 17, 21, 54, 39, 234382), 'first_name': 'Holberton', 'updated_at': date
+2019, 2, 17, 21, 54, 39, 234382), 'first_name': 'ALX', 'updated_at': date
 time.datetime(2019, 2, 17, 21, 54, 39, 234382), 'id': '6f348019-0499-420f-8eec-
 ef0fdc863c02'}
 (USER)
@@ -296,7 +296,7 @@ ef0fdc863c02'}
 
 ## Testing :straight_ruler:
 
-Unittests for the HolbertonBnB project are defined in the [tests](./tests)
+Unittests for the ALXBnB project are defined in the [tests](./tests)
 folder. To run the entire test suite simultaneously, execute the following command:
 
 ```

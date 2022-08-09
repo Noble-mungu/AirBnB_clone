@@ -31,7 +31,7 @@ class TestUser(unittest.TestCase):
             pass
         FileStorage._FileStorage__objects = {}
         cls.filestorage = FileStorage()
-        cls.user = User(email="poppy@holberton.com", password="betty98")
+        cls.user = User(email="poppy@ALX.com", password="betty98")
 
         if type(models.storage) == DBStorage:
             cls.dbstorage = DBStorage()
